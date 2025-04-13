@@ -10,6 +10,10 @@ import Servicios from './pages/Servicios';
 import Planes from './pages/Planes';
 import Consejos from './pages/Consejos';
 import KitDigital from './pages/KitDigital';
+import Seo from "./pages/Seo";
+import PaginasWeb from "./pages/PaginasWeb";
+import RedesSociales from "./pages/RedesSociales";
+import Ecommerce from "./pages/Ecommerce";
 
 
 
@@ -24,6 +28,10 @@ function App() {
         <Route path="/planes" element={<Planes />} />
         <Route path="/consejos" element={<Consejos />} />
         <Route path="/kitdigital" element={<KitDigital />} />
+        <Route path="/servicios/seo" element={<Seo />} />
+        <Route path="/servicios/web" element={<PaginasWeb />} />
+        <Route path="/servicios/redes" element={<RedesSociales />} />
+        <Route path="/servicios/ecommerce" element={<Ecommerce />} />
       </Routes>
       <Footer />
       <WhatsappButton />

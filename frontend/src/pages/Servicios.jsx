@@ -19,7 +19,7 @@ export default function Servicios() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          En <span className="font-bold text-mmlgold">MML</span>, ofrecemos soluciones digitales a medida para que tu negocio crezca:
+          En <span className="font-bold text-mmlgold">MML STACK</span>, ofrecemos soluciones digitales a medida para que tu negocio crezca:
           <br /><br />
           <span className="font-semibold text-gray-900">Diseño web responsive</span> que se adapta a todos los dispositivos,
           <span className="font-semibold text-gray-900"> optimización SEO</span> para posicionarte en buscadores,
