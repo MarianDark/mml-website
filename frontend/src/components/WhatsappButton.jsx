@@ -8,7 +8,7 @@ export default function WhatsappButton() {
       target="_blank"
       rel="noopener noreferrer"
     >
-      <img src={whatsappIcon} alt="WhatsApp" className="w-20 h-15" />
+      <img src={whatsappIcon} alt="WhatsApp" className="w-12 h-12" />
     </a>
   );
 }

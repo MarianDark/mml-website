@@ -2,10 +2,10 @@ import { motion } from "framer-motion";
 
 export default function Nosotros() {
   return (
-    <section className="pt-40 px-6 bg-slate-100 text-gray-800 font-sans min-h-screen overflow-y-auto">
+    <section className="pt-24 px-4 md:px-10 bg-slate-100 text-gray-800 font-sans min-h-screen">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
-          className="text-6xl font-bold mb-12 text-mmlgold"
+          className="text-3xl md:text-5xl font-bold mb-8 text-mmlgold"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -14,19 +14,19 @@ export default function Nosotros() {
         </motion.h2>
 
         <motion.p
-          className="text-2xl md:text-4xl leading-relaxed space-y-6"
+          className="text-base md:text-2xl leading-relaxed space-y-4"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
           En <span className="font-bold text-mmlgold">MML Stack</span> no solo creamos páginas web. Diseñamos{" "}
-          <span className="italic">experiencias digitales</span> que inspiran, que venden y que cuentan la historia de tu negocio con impacto.
+          <span className="italic">experiencias digitales</span> que inspiran, venden y cuentan la historia de tu negocio con impacto.
           <br /><br />
           Sabemos que hoy en día no basta con tener presencia en internet. Una web debe cautivar, comunicar, persuadir y, sobre todo,{" "}
           <span className="font-medium">funcionar como una poderosa herramienta de ventas</span>. Por eso, cada proyecto que desarrollamos combina diseño atractivo, estructura clara, contenido estratégico y tecnología de vanguardia.
           <br /><br />
           Somos un equipo apasionado por la innovación, el diseño y la funcionalidad. Nos dedicamos a ayudarte a{" "}
-          <strong>transformar ideas en plataformas digitales sólidas</strong>, estéticamente impactantes y totalmente adaptadas a cualquier dispositivo.
+          <strong>transformar ideas en plataformas digitales sólidas</strong>, visualmente impactantes y totalmente adaptadas a cualquier dispositivo.
           <br /><br />
           En <strong>MML Stack</strong>, creemos que una página web es mucho más que una vitrina:
           <br />

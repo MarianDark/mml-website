@@ -52,17 +52,17 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <h1 className="text-6xl md:text-8xl font-bold mb-6 text-white border-mmlgold border-4 p-4">
+          <h1 className="text-3xl md:text-5xl font-bold mb-4 text-white border-mmlgold border-2 p-2">
             Impulsa tu negocio con una{" "}
             <span className="text-mmlgold">web profesional</span>
           </h1>
-          <p className="text-lg md:text-4xl mb-8 max-w-2xl">
-            En <strong>MML</strong> creamos y diseñamos páginas web que destacan
-            y conectan con tus clientes.
+          <p className="text-sm md:text-xl mb-6 max-w-xl">
+            En <strong>MML STACK</strong> creamos y diseñamos páginas web que
+            destacan y conectan con tus clientes.
           </p>
           <a
             href="#footer"
-            className="inline-block bg-slate-800 text-white font-semibold px-8 py-4 rounded shadow-md transition text-xl"
+            className="inline-block bg-slate-800 text-white font-semibold px-4 py-2 rounded shadow-md transition text-sm md:text-base"
           >
             <span className="hover:text-mmlgold transition">
               ¡CONTÁCTANOS AHORA!
@@ -82,14 +82,16 @@ export default function Home() {
 
       {/* SERVICIOS */}
       <motion.section
-        className="px-6 md:px-16 text-center"
+        className="px-3 md:px-6 text-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-6xl font-bold mb-8">Nuestros Servicios</h2>
-        <div className="grid gap-8 md:grid-cols-3">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4">
+          Nuestros Servicios
+        </h2>
+        <div className="grid gap-4 md:grid-cols-3">
           <ServiceCard
             icon={<FaPaintBrush />}
             title="Diseño Web Creativo"
@@ -109,21 +111,19 @@ export default function Home() {
       </motion.section>
 
       {/* TESTIMONIOS */}
-      <motion.section className="px-6 md:px-16 text-center">
-        <h2 className="text-6xl font-bold mb-8">Testimonios</h2>
-        <div className="grid gap-6 md:grid-cols-3">
+      <motion.section className="px-3 md:px-6 text-center mt-8">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4">Testimonios</h2>
+        <div className="grid gap-4 md:grid-cols-3">
           <TestimonialCard
             name="Carla Ruiz"
             message="Gracias a MML Stack ahora mi tienda vende el doble. ¡100% recomendados!"
             avatar="https://ui-avatars.com/api/?name=Carla+Ruiz&background=22c55e&color=fff&size=128"
           />
-
           <TestimonialCard
             name="Pedro López"
             message="Fueron rápidos, creativos y entendieron lo que yo quería para mi negocio."
             avatar="https://ui-avatars.com/api/?name=Pedro+Lopez&background=8a2b32&color=fff&size=128"
           />
-
           <TestimonialCard
             name="Laura Méndez"
             message="MML STACK creó la web de mis sueños. ¡Increíble trabajo!"
@@ -134,14 +134,16 @@ export default function Home() {
 
       {/* CONTADOR */}
       <motion.section
-        className="bg-orange-50 py-16 px-6 md:px-16 text-center"
+        className="bg-orange-50 py-8 px-3 md:px-6 text-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.6 }}
         viewport={{ once: true }}
       >
-        <h2 className="text-6xl font-bold mb-8">Nuestra Experiencia</h2>
-        <div className="grid gap-10 md:grid-cols-3">
+        <h2 className="text-2xl md:text-4xl font-bold mb-4">
+          Nuestra Experiencia
+        </h2>
+        <div className="grid gap-4 md:grid-cols-3">
           <Counter label="Clientes Felices" target={34} />
           <Counter label="Proyectos Web" target={28} />
           <Counter label="Años de Experiencia" target={2} />

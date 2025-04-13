@@ -3,10 +3,10 @@ import PlanCard from "../components/PlanCard";
 
 export default function Planes() {
   return (
-    <section className="pt-60 px-6 bg-white text-gray-800 font-sans min-h-screen">
+    <section className="pt-32 px-4 md:px-10 bg-white text-gray-800 font-sans min-h-screen">
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
-          className="text-6xl font-bold mb-10 text-mmlgold"
+          className="text-3xl md:text-5xl font-bold mb-8 text-mmlgold"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
@@ -15,7 +15,7 @@ export default function Planes() {
         </motion.h2>
 
         <motion.div
-          className="grid gap-8 md:grid-cols-3"
+          className="grid gap-6 md:grid-cols-3"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}

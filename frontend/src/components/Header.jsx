@@ -18,30 +18,34 @@ export default function Header() {
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
-      <h1 className="text-lg md:text-3xl font-bold text-center md:text-left mt-2 md:mt-0">
+      <h1 className="text-lg md:text-xl font-bold text-center md:text-left mt-2 md:mt-0">
         Diseño, tecnología y estrategia en una sola página.
       </h1>
-      <nav className={`flex-col md:flex-row gap-4 md:gap-10 text-base md:text-2xl mt-4 md:mt-0 ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
-        <Link to="/">Inicio</Link>
-        <Link to="/nosotros">Nosotros</Link>
-        <div className="relative group">
-          <button className="text-slate-800 hover:text-mmlgold transition font-semibold">
-            Servicios ▾
-          </button>
-          <div className="absolute hidden group-hover:flex flex-col bg-white text-slate-800 shadow-md rounded-md p-2 mt-2 z-50 min-w-[200px] md:min-w-[300px]">
-            <Link to="/servicios/seo" className="hover:text-mmlgold px-4 py-2 transition">SEO Local</Link>
-            <Link to="/servicios/web" className="hover:text-mmlgold px-4 py-2 transition">Páginas Web</Link>
-            <Link to="/servicios/redes" className="hover:text-mmlgold px-4 py-2 transition">Redes Sociales</Link>
-            <Link to="/servicios/ecommerce" className="hover:text-mmlgold px-4 py-2 transition">E-commerce</Link>
-          </div>
-        </div>
-        <Link to="/planes">Planes</Link>
-        <Link to="/consejos">Consejos</Link>
-        <Link to="/kitdigital">Kit Digital</Link>
-      </nav>
-      <a href="#footer" className="bg-slate-800 text-white px-3 py-1 md:px-8 md:py-4 rounded text-base md:text-2xl shadow-md hover:shadow-lg transform hover:scale-105 transition mt-4 md:mt-0">
-        CONTÁCTANOS
-      </a>
+      <nav className={`flex-col md:flex-row gap-4 md:gap-10 text-sm md:text-lg mt-4 md:mt-0 ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
+  <Link to="/">Inicio</Link>
+  <Link to="/nosotros">Nosotros</Link>
+  <div className="relative group">
+    <button className="text-slate-800 hover:text-mmlgold transition font-semibold">
+      Servicios ▾
+    </button>
+    <div className="absolute hidden group-hover:flex flex-col bg-white text-slate-800 shadow-md rounded-md p-2 mt-2 z-50 min-w-[200px] md:min-w-[300px] text-sm">
+      <Link to="/servicios/seo" className="hover:text-mmlgold px-4 py-2 transition">SEO Local</Link>
+      <Link to="/servicios/web" className="hover:text-mmlgold px-4 py-2 transition">Páginas Web</Link>
+      <Link to="/servicios/redes" className="hover:text-mmlgold px-4 py-2 transition">Redes Sociales</Link>
+      <Link to="/servicios/ecommerce" className="hover:text-mmlgold px-4 py-2 transition">E-commerce</Link>
+    </div>
+  </div>
+  <Link to="/planes">Planes</Link>
+  <Link to="/consejos">Consejos</Link>
+  <Link to="/kitdigital">Kit Digital</Link>
+</nav>
+<a
+  href="#footer"
+  className="bg-slate-800 text-white px-2 py-1 md:px-4 md:py-2 rounded text-sm md:text-base shadow-md hover:shadow-lg transform hover:scale-105 transition mt-4 md:mt-0"
+>
+  CONTÁCTANOS
+</a>
+
     </header>
   );
 }
