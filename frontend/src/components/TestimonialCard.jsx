@@ -11,8 +11,8 @@ export default function TestimonialCard({ name, message, avatar }) {
         alt={name}
         className="w-16 h-16 rounded-full mx-auto mb-4 object-cover"
       />
-      <p className="text-gray-600 italic mb-4">"{message}"</p>
-      <h4 className="text-mmlgold font-bold">{name}</h4>
+      <p className="text-gray-600 italic mb-4 text-3xl">"{message}"</p>
+      <h4 className="text-mmlgold font-bold text-4xl">{name}</h4>
     </motion.div>
   );
 }
