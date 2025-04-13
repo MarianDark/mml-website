@@ -13,15 +13,15 @@ export default function Header() {
   return (
     <header className="fixed top-0 left-0 right-0 flex flex-col md:flex-row justify-between items-center p-2 md:p-4 shadow-md bg-white z-50">
       <div className="flex flex-row items-center justify-between w-full md:w-auto">
-        <img src={Logo} alt="MML Logo" className="w-24 h-24 md:w-36 md:h-36" />
+        <img src={Logo} alt="MML Logo" className="w-20 h-20 md:w-36 md:h-36" />
         <button onClick={toggleMenu} className="md:hidden text-2xl">
           {menuOpen ? <FaTimes /> : <FaBars />}
         </button>
       </div>
-      <h1 className="text-xl md:text-3xl font-bold text-center md:text-left mt-2 md:mt-0">
+      <h1 className="text-lg md:text-3xl font-bold text-center md:text-left mt-2 md:mt-0">
         Diseño, tecnología y estrategia en una sola página.
       </h1>
-      <nav className={`flex-col md:flex-row gap-4 md:gap-10 text-lg md:text-2xl mt-4 md:mt-0 ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
+      <nav className={`flex-col md:flex-row gap-4 md:gap-10 text-base md:text-2xl mt-4 md:mt-0 ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
         <Link to="/">Inicio</Link>
         <Link to="/nosotros">Nosotros</Link>
         <div className="relative group">
@@ -39,7 +39,7 @@ export default function Header() {
         <Link to="/consejos">Consejos</Link>
         <Link to="/kitdigital">Kit Digital</Link>
       </nav>
-      <a href="#footer" className="bg-slate-800 text-white px-4 py-2 md:px-8 md:py-4 rounded text-lg md:text-2xl shadow-md hover:shadow-lg transform hover:scale-105 transition mt-4 md:mt-0">
+      <a href="#footer" className="bg-slate-800 text-white px-3 py-1 md:px-8 md:py-4 rounded text-base md:text-2xl shadow-md hover:shadow-lg transform hover:scale-105 transition mt-4 md:mt-0">
         CONTÁCTANOS
       </a>
     </header>
