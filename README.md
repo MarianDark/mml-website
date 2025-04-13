@@ -34,16 +34,16 @@ Este sitio fue creado usando **React**, **Tailwind CSS**, **Framer Motion**, **N
 🧠 Backend
 bash
 
-cd backend
-npm install
-npm run dev
+-cd backend
+-npm install
+-npm run dev
 
 🖥️ Frontend
 bash
 
-cd frontend
-npm install
-npm run dev
+-cd frontend
+-npm install
+-npm run dev
 
 🧱 Estructura de carpetas
 MML-WEBSITE/
