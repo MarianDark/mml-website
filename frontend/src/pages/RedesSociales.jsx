@@ -21,9 +21,9 @@ export default function RedesSociales() {
         >
           En <strong className="text-mmlgold">MML Stack</strong> no solo creamos contenido, creamos comunidad.
           <br /><br />
-          📸 Diseñamos estrategias efectivas para conectar con tu audiencia. <br />
-          🧠 Gestionamos tus perfiles con enfoque estratégico y creatividad. <br />
-          📈 Generamos contenido visual atractivo, optimizado para aumentar el alcance, la interacción y el valor de tu marca.
+          -Diseñamos estrategias efectivas para conectar con tu audiencia. <br />
+          -Gestionamos tus perfiles con enfoque estratégico y creatividad. <br />
+          -Generamos contenido visual atractivo, optimizado para aumentar el alcance, la interacción y el valor de tu marca.
           <br /><br />
           Confía en nosotros para llevar tus redes sociales al siguiente nivel y convertir seguidores en clientes reales.
         </motion.p>

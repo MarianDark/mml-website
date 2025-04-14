@@ -19,9 +19,9 @@ export default function Ecommerce() {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.2, duration: 0.8 }}
         >
-          💼 Convierte tu negocio en una tienda online totalmente funcional, moderna y optimizada para vender. <br />
-          🛒 Te ofrecemos soluciones de comercio electrónico personalizadas con carrito, pasarelas de pago, panel de productos y control de stock. <br />
-          📊 Además, integramos herramientas analíticas para que puedas medir tus resultados y escalar tu negocio.
+          -Convierte tu negocio en una tienda online totalmente funcional, moderna y optimizada para vender. <br />
+          -Te ofrecemos soluciones de comercio electrónico personalizadas con carrito, pasarelas de pago, panel de productos y control de stock. <br />
+          -Además, integramos herramientas analíticas para que puedas medir tus resultados y escalar tu negocio.
           <br /><br />
           En <strong className="text-mmlgold">MML Stack</strong> diseñamos tu tienda como si fuera nuestra.
         </motion.p>

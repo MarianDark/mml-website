@@ -132,23 +132,30 @@ export default function Home() {
         </div>
       </motion.section>
 
-      {/* CONTADOR */}
-      <motion.section
-        className="bg-orange-50 py-8 px-3 md:px-6 text-center"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-        viewport={{ once: true }}
-      >
-        <h2 className="text-2xl md:text-4xl font-bold mb-4">
-          Nuestra Experiencia
-        </h2>
-        <div className="grid gap-4 md:grid-cols-3">
-          <Counter label="Clientes Felices" target={34} />
-          <Counter label="Proyectos Web" target={28} />
-          <Counter label="Años de Experiencia" target={2} />
-        </div>
-      </motion.section>
+ {/* CONTADOR */}
+<motion.section
+  className="bg-orange-50 py-6 px-2 md:px-4 text-center"
+  initial={{ opacity: 0, y: 30 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.6 }}
+  viewport={{ once: true }}
+>
+  <h2 className="text-xl md:text-3xl font-bold mb-4">
+    Nuestra Experiencia
+  </h2>
+  <div className="grid gap-3 md:grid-cols-3 text-sm md:text-base">
+  <div className="text-sm md:text-lg">
+    <Counter label="Clientes Felices" target={34} />
+  </div>
+  <div className="text-sm md:text-lg">
+    <Counter label="Proyectos Web" target={28} />
+  </div>
+  <div className="text-sm md:text-lg">
+    <Counter label="Años de Experiencia" target={2} />
+  </div>
+</div>
+</motion.section>
+
     </div>
   );
 }

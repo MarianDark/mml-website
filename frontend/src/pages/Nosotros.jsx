@@ -30,9 +30,9 @@ export default function Nosotros() {
           <br /><br />
           En <strong>MML Stack</strong>, creemos que una página web es mucho más que una vitrina:
           <br />
-          ✨ Es tu carta de presentación al mundo. <br />
-          📣 Es la voz de tu negocio cuando tú no estás. <br />
-          💻 Es tu oficina virtual, abierta 24/7.
+         -Es tu carta de presentación al mundo. <br />
+         -Es la voz de tu negocio cuando tú no estás. <br />
+         -Es tu oficina virtual, abierta 24/7.
           <br /><br />
           Confía en nosotros para diseñar no solo tu sitio, sino{" "}
           <span className="font-semibold text-mmlgold">una experiencia digital completa</span> que impulse tu crecimiento y haga que tu marca deje huella.
