@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer id="footer" className="bg-slate-800 text-white p-6">
       <FormContact />
-      <div className="mt-8 flex justify-between">
+      <div className="mt-8 flex flex-col md:flex-row justify-between gap-6">
         <div>
           <h2 className="font-bold">MML</h2>
           <p>Destaca tu negocio en Google</p>

@@ -3,9 +3,9 @@ import { motion } from "framer-motion";
 export default function Ecommerce() {
   return (
     <section className="pt-40 px-6 bg-white text-gray-800 font-sans min-h-screen">
-      <div className="max-w-4xl mx-auto text-center">
+      <div className="max-w-xl mx-auto text-center">
         <motion.h2
-          className="text-4xl md:text-5xl font-bold mb-10 text-mmlgold"
+          className="text-4xl md:text-4xl font-bold mb-10 text-mmlgold"
           initial={{ opacity: 0, y: 40 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}

@@ -23,7 +23,11 @@ export default function FormContact() {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="space-y-4 bg-white p-8 rounded-xl shadow-lg">
+    <form
+      id="formulario-contacto"
+      onSubmit={handleSubmit}
+      className="space-y-4 bg-white p-8 rounded-xl shadow-lg"
+    >
       <input 
         type="text" 
         placeholder="Nombre"
