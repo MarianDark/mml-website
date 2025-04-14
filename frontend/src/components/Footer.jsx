@@ -16,14 +16,14 @@ export default function Footer() {
           <h3 className="font-bold mb-2">Menú</h3>
           <ul className="space-y-1">
             <li>
-              <Link to="/#servicios" className="text-white hover:text-mmlgold transition">
+              <a href="/#servicecard" className="text-white hover:text-mmlgold transition">
                 Servicios
-              </Link>
+              </a>
             </li>
             <li>
-              <Link to="/#testimonios" className="text-white hover:text-mmlgold transition">
+              <a href="/#testimonialcard" className="text-white hover:text-mmlgold transition">
                 Testimonios
-              </Link>
+              </a>
             </li>
             <li>
               <Link to="/planes" className="text-white hover:text-mmlgold transition">
@@ -51,20 +51,13 @@ export default function Footer() {
         </div>
       </div>
 
-      {/* Bloque final con texto legal y enlaces */}
       <div className="text-center text-sm text-white mt-10 border-t border-white/20 pt-6">
         <p>© 2023 MML Stack. Todos los derechos reservados.</p>
         <div className="mt-2 space-x-4">
-          <Link
-            to="/politica"
-            className="text-white hover:text-mmlgold transition"
-          >
+          <Link to="/politica" className="text-white hover:text-mmlgold transition">
             Política & Términos
           </Link>
-          <Link
-            to="/aviso-legal"
-            className="text-white hover:text-mmlgold transition"
-          >
+          <Link to="/aviso-legal" className="text-white hover:text-mmlgold transition">
             Aviso Legal
           </Link>
         </div>
