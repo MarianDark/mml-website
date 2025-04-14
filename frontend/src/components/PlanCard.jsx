@@ -12,7 +12,7 @@ export default function PlanCard({ title, price, features, highlighted }) {
     >
       {/* Etiqueta de "Mejor opción" */}
       {highlighted && (
-        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-mmlgold text-white px-3 py-1 text-sm md:text-base font-semibold rounded-full shadow-md">
+        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-mmlgold text-white px-2 py-1 text-sm md:text-base font-semibold rounded-full shadow-md">
           ⭐ DESTACADO
         </div>
       )}
