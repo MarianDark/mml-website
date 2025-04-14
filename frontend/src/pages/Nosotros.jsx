@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 
 export default function Nosotros() {
   return (
-    <section className="pt-24 px-4 md:px-10 bg-slate-100 text-gray-800 font-sans min-h-screen">
+    <section className="pt-40 px-4 md:px-10 bg-slate-100 text-gray-800 font-sans min-h-screen">
       <div className="max-w-4xl mx-auto text-center">
         <motion.h2
           className="text-3xl md:text-4xl font-bold mb-8 text-mmlgold"
@@ -30,9 +30,9 @@ export default function Nosotros() {
           <br /><br />
           En <strong>MML Stack</strong>, creemos que una página web es mucho más que una vitrina:
           <br />
-         -Es tu carta de presentación al mundo. <br />
-         -Es la voz de tu negocio cuando tú no estás. <br />
-         -Es tu oficina virtual, abierta 24/7.
+          - Es tu carta de presentación al mundo. <br />
+          - Es la voz de tu negocio cuando tú no estás. <br />
+          - Es tu oficina virtual, abierta 24/7.
           <br /><br />
           Confía en nosotros para diseñar no solo tu sitio, sino{" "}
           <span className="font-semibold text-mmlgold">una experiencia digital completa</span> que impulse tu crecimiento y haga que tu marca deje huella.
