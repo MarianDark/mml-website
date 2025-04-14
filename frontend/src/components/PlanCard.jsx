@@ -13,13 +13,15 @@ export default function PlanCard({ title, price, features, highlighted }) {
       {/* Etiqueta de "Mejor opción" */}
       {highlighted && (
         <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-mmlgold text-white px-3 py-1 text-sm md:text-base font-semibold rounded-full shadow-md">
-          ⭐ Mejor opción
+          ⭐ DESTACADO
         </div>
       )}
 
       {/* Título y precio */}
       <div className="mb-6">
-        <h3 className="text-xl md:text-3xl font-bold text-mmlgold mb-2">{title}</h3>
+        <h3 className="text-xl md:text-3xl font-bold text-mmlgold mb-2">
+          {title}
+        </h3>
         <p className="text-3xl md:text-4xl font-bold text-gray-800">{price}</p>
       </div>
 
@@ -33,7 +35,8 @@ export default function PlanCard({ title, price, features, highlighted }) {
       </ul>
 
       {/* Botón */}
-      <button className="bg-slate-800 text-white hover:text-mmlgold font-semibold px-4 py-3 rounded-lg text-base md:text-xl transition-colors">
+      {/* Botón */}
+      <button className="bg-slate-800 text-white hover:text-mmlgold font-semibold px-3 py-2 rounded-md text-sm md:text-base transition-colors">
         CONTRATAR
       </button>
     </motion.div>

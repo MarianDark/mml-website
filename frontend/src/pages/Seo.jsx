@@ -57,7 +57,7 @@ export default function Seo() {
   <div className="bg-white p-8 rounded-xl shadow-md text-center space-y-6">
     <h3 className="text-3xl font-bold text-slate-800">BASIC</h3>
     <p className="text-xl text-mmlgold font-bold">
-      56€ <span className="text-base text-gray-600">/mes + IVA</span>
+      50€ <span className="text-base text-gray-600">/mes + IVA</span>
     </p>
     <ul className="text-left space-y-2 text-sm md:text-base">
       <li>✔️ Más visibilidad en Google</li>
@@ -78,7 +78,7 @@ export default function Seo() {
     </span>
     <h3 className="text-3xl font-bold text-slate-800">PRO</h3>
     <p className="text-xl text-mmlgold font-bold">
-      76€ <span className="text-base text-gray-600">/mes + IVA</span>
+      70€ <span className="text-base text-gray-600">/mes + IVA</span>
     </p>
     <ul className="text-left space-y-2 text-sm md:text-base">
       <li>✔️ Más visibilidad en Google</li>
@@ -97,7 +97,7 @@ export default function Seo() {
   <div className="bg-white p-8 rounded-xl shadow-md text-center space-y-6">
     <h3 className="text-3xl font-bold text-slate-800">PREMIUM</h3>
     <p className="text-xl text-mmlgold font-bold">
-      117€ <span className="text-base text-gray-600">/mes + IVA</span>
+      110€ <span className="text-base text-gray-600">/mes + IVA</span>
     </p>
     <ul className="text-left space-y-2 text-sm md:text-base">
       <li>✔️ Todo lo anterior</li>
