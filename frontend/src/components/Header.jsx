@@ -28,8 +28,8 @@ export default function Header() {
         </button>
       </div>
 
-      <h1 className="text-lg md:text-xl font-bold text-center md:text-left mt-2 md:mt-0">
-        Diseño, tecnología y estrategia en una sola página.
+      <h1 className="text-lg md:text-xl font-bold text-center md:text-left mt-2 md:mt-2">
+        DISEÑO, TECNOLOGÍA Y ESTRATEGIA EN UNA SOLA PÁGINA.
       </h1>
 
       <nav className={`flex-col md:flex-row gap-4 md:gap-10 text-sm md:text-lg mt-4 md:mt-0 ${menuOpen ? 'flex' : 'hidden'} md:flex`}>
@@ -64,8 +64,6 @@ export default function Header() {
         </div>
 
         <Link to="/planes">Planes</Link>
-        <Link to="/consejos">Consejos</Link>
-        <Link to="/kitdigital">Kit Digital</Link>
       </nav>
 
       <a

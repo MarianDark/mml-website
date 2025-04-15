@@ -8,7 +8,7 @@ export default function Footer() {
 
       <div className="flex flex-col md:flex-row justify-between gap-6">
         <div>
-          <h2 className="font-bold text-lg">MML Stack</h2>
+        <h2 className="font-bold text-2xl text-white">MML Stack</h2>
           <p>Destaca tu negocio en Google</p>
         </div>
 
@@ -28,11 +28,6 @@ export default function Footer() {
             <li>
               <Link to="/planes" className="text-white hover:text-mmlgold transition">
                 Planes
-              </Link>
-            </li>
-            <li>
-              <Link to="/consejos" className="text-white hover:text-mmlgold transition">
-                Consejos
               </Link>
             </li>
             <li>
