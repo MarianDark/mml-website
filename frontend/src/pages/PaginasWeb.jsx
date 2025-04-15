@@ -13,7 +13,8 @@ import webImage2 from "../assets/images/web2.png";
 import webImage3 from "../assets/images/web3.png";
 
 export default function PaginasWeb() {
-  const planesRef = useRef(null);
+  const planesRef = useRef(null); // Nuestro servicio web
+  const planIncluidoRef = useRef(null); // Un plan todo incluido
   const [highlight, setHighlight] = useState(false);
 
   const scrollToPlanes = () => {
@@ -21,6 +22,12 @@ export default function PaginasWeb() {
       planesRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
       setHighlight(true);
       setTimeout(() => setHighlight(false), 3000);
+    }
+  };
+
+  const scrollToPlanIncluido = () => {
+    if (planIncluidoRef.current) {
+      planIncluidoRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
@@ -100,7 +107,7 @@ export default function PaginasWeb() {
             Nuestros diseñadores crearán una página web personalizada a tu negocio y necesidades.
           </p>
           <button
-            onClick={scrollToPlanes}
+            onClick={scrollToPlanIncluido}
             className="bg-slate-800 text-white font-semibold px-6 py-3 rounded text-sm hover:text-mmlgold transition"
           >
             COMENZAR
@@ -135,7 +142,10 @@ export default function PaginasWeb() {
             <li>✔️ Servicio todo incluido</li>
             <li>✔️ *Solo 1 año de permanencia</li>
           </ul>
-          <button className="bg-slate-800 text-white px-6 py-2 rounded hover:text-mmlgold transition text-sm">
+          <button
+            onClick={scrollToPlanes}
+            className="bg-slate-800 text-white px-6 py-2 rounded hover:text-mmlgold transition text-sm"
+          >
             CONTRATAR
           </button>
         </div>
@@ -143,6 +153,7 @@ export default function PaginasWeb() {
 
       {/* ÍCONOS DE FUNCIONALIDADES */}
       <motion.div
+        ref={planIncluidoRef}
         className="max-w-7xl mx-auto text-center"
         initial={{ opacity: 0, y: 30 }}
         whileInView={{ opacity: 1, y: 0 }}

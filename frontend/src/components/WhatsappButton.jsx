@@ -4,7 +4,7 @@ export default function WhatsappButton() {
   return (
     <a 
       href="https://wa.me/34612345678?text=Hola%20MML" 
-      className="fixed bottom-6 right-10 rounded-full p-10 shadow-lg z-50 animate-bounce"
+      className="fixed bottom-6 right-10 rounded-full p-1 shadow-lg z-50 animate-bounce"
       target="_blank"
       rel="noopener noreferrer"
     >

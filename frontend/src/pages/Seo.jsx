@@ -1,16 +1,33 @@
 import { motion } from "framer-motion";
 import { useRef, useEffect, useState } from "react";
-import { FaSearch, FaCalendarAlt, FaFileAlt, FaTools, FaMapMarkedAlt, FaStar } from "react-icons/fa";
+import seo1 from "../assets/images/seo1.jpg";
+import seo2 from "../assets/images/seo2.jpg";
+import seo3 from "../assets/images/seo3.jpg";
+import {
+  FaSearch,
+  FaCalendarAlt,
+  FaFileAlt,
+  FaTools,
+  FaMapMarkedAlt,
+  FaStar
+} from "react-icons/fa";
 
 export default function Seo() {
   const planesRef = useRef(null);
   const [resaltarPro, setResaltarPro] = useState(false);
+  const packRef = useRef(null);
 
   const scrollToPlanes = () => {
     if (planesRef.current) {
       planesRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
       setResaltarPro(true);
       setTimeout(() => setResaltarPro(false), 3000);
+    }
+  };
+
+  const scrollToPack = () => {
+    if (packRef.current) {
+      packRef.current.scrollIntoView({ behavior: "smooth", block: "center" });
     }
   };
 
@@ -57,25 +74,49 @@ export default function Seo() {
     <section className="pt-40 px-4 md:px-10 bg-slate-100 text-gray-800 font-sans min-h-screen">
       <div className="max-w-7xl mx-auto text-center space-y-20">
 
-        {/* Título y descripción */}
+        {/* HERO VISUAL - DESTACA TU NEGOCIO ONLINE */}
         <motion.div
-          initial={{ opacity: 0, y: 40 }}
+          className="grid md:grid-cols-2 gap-8 items-center"
+          initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
-          <h2 className="text-4xl md:text-4xl font-bold text-mmlgold mb-6">
-            Servicio de SEO Local
-          </h2>
-          <p className="text-xl md:text-xl leading-relaxed max-w-4xl mx-auto">
-            ¿Quieres que tu negocio aparezca en las búsquedas locales de Google?
-            En <span className="font-bold text-mmlgold">MML Stack</span> te ayudamos a optimizar tu visibilidad en tu ciudad o región.
-            El SEO Local es la clave para atraer a clientes cercanos, destacar en Google Maps y convertir búsquedas en ventas reales.
-            <br /><br />
-            - Posicionamiento en Google My Business<br />
-            - Optimización por palabras clave locales<br />
-            - Aumento de visibilidad frente a la competencia<br />
-            - Estrategias de reseñas y reputación online
-          </p>
+          {/* Imágenes lado izquierdo */}
+          <div className="flex flex-col items-center gap-3">
+            <div className="flex gap-3">
+              <img
+                src={seo1}
+                alt="veterinaria"
+                className="rounded-lg w-[200px] h-[200px] object-cover shadow"
+              />
+              <img
+                src={seo2}
+                alt="negocio"
+                className="rounded-lg w-[180px] h-[200px] object-cover shadow"
+              />
+            </div>
+            <img
+              src={seo3}
+              alt="tecnico"
+              className="rounded-lg w-[200px] h-[200px] object-cover shadow"
+            />
+          </div>
+
+          {/* Texto lado derecho */}
+          <div className="text-left space-y-4">
+            <h2 className="text-3xl font-bold text-slate-800">
+              Destaca tu negocio online
+            </h2>
+            <p className="text-gray-700 text-base">
+              Posiciona tu negocio en los primeros resultados de búsqueda y supera tu competencia con nuestro servicio de SEO Local.
+            </p>
+            <button
+              onClick={scrollToPack}
+              className="bg-slate-800 text-white font-bold px-6 py-3 rounded text-sm transition hover:text-mmlgold"
+            >
+              COMENZAR
+            </button>
+          </div>
         </motion.div>
 
         {/* Planes de precios */}
@@ -142,6 +183,7 @@ export default function Seo() {
 
         {/* Bloques de servicios */}
         <motion.div
+          ref={packRef}
           className="text-left"
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -162,7 +204,6 @@ export default function Seo() {
             ))}
           </div>
 
-          {/* Botón scroll a planes */}
           <div className="text-center mt-10">
             <button
               onClick={scrollToPlanes}
@@ -176,3 +217,4 @@ export default function Seo() {
     </section>
   );
 }
+

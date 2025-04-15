@@ -40,13 +40,13 @@ export default function Header() {
         <div className="relative">
           <button
             onClick={toggleServicios}
-            className="text-slate-800 hover:text-mmlgold transition font-semibold"
+            className="text-slate-800 hover:text-white transition font-semibold"
           >
             Servicios ▾
           </button>
 
           {serviciosOpen && (
-            <div className="absolute flex flex-col bg-white text-slate-800 shadow-md rounded-md p-2 mt-2 z-50 min-w-[200px] md:min-w-[300px] text-sm">
+            <div className="absolute flex flex-col bg-white text-slate-800 shadow-md rounded-md p-2 mt-2 z-50 min-w-[200px] md:min-w-[150px] text-sm">
               <Link to="/servicios/seo" className="hover:text-mmlgold px-4 py-2 transition" onClick={closeServicios}>
                 SEO Local
               </Link>
