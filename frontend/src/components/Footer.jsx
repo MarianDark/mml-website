@@ -7,12 +7,12 @@ export default function Footer() {
       <FormContact />
 
       <div className="flex flex-col md:flex-row justify-between gap-6">
-        <div>
-        <h2 className="font-bold text-2xl text-white">MML Stack</h2>
-          <p>Destaca tu negocio en Google</p>
+        <div className="text-center md:text-left">
+          <h2 className="font-bold text-2xl text-white">MML Stack</h2>
+          <p className="mt-2">Destaca tu negocio en Google</p>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h3 className="font-bold mb-2">Menú</h3>
           <ul className="space-y-1">
             <li>
@@ -38,7 +38,7 @@ export default function Footer() {
           </ul>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h3 className="font-bold mb-2">Contacto</h3>
           <p>Email: hola@mml.com</p>
           <p>Teléfono: +34 600 116 095</p>

@@ -36,7 +36,7 @@ export default function FormContact() {
     <form
       id="formulario-contacto"
       onSubmit={handleSubmit}
-      className="space-y-4 bg-white p-8 rounded-xl shadow-lg"
+      className="space-y-4 bg-white p-6 sm:p-8 rounded-xl shadow-lg max-w-lg mx-auto"
     >
       <input
         type="text"
@@ -63,30 +63,30 @@ export default function FormContact() {
         required
       />
 
-<div className="text-left">
-  <label className="flex items-center gap-80 text-sm text-gray-700">
-    <input
-      type="checkbox"
-      checked={aceptaTerminos}
-      onChange={(e) => setAceptaTerminos(e.target.checked)}
-      className="accent-mmlgold"
-      required
-    />
-    <span>
-      Acepto los{" "}
-      <a
-        href="/politica"
-        className="text-mmlgold underline hover:text-mmlgold"
-      >
-        Términos y Condiciones
-      </a>
-    </span>
-  </label>
-</div>
+      <div className="text-left">
+        <label className="flex items-center gap-2 text-sm text-gray-700">
+          <input
+            type="checkbox"
+            checked={aceptaTerminos}
+            onChange={(e) => setAceptaTerminos(e.target.checked)}
+            className="accent-mmlgold"
+            required
+          />
+          <span>
+            Acepto los{" "}
+            <a
+              href="/politica"
+              className="text-mmlgold underline hover:text-mmlgold"
+            >
+              Términos y Condiciones
+            </a>
+          </span>
+        </label>
+      </div>
 
       <button
         type="submit"
-        className="inline-block bg-slate-800 hover:text-mmlgold text-white font-semibold px-8 py-4 rounded shadow-md transition text-xl"
+        className="inline-block bg-slate-800 hover:text-mmlgold text-white font-semibold px-6 sm:px-8 py-3 sm:py-4 rounded shadow-md transition text-lg sm:text-xl w-full"
       >
         ¡TE LLAMAMOS!
       </button>
